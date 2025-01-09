@@ -1,5 +1,7 @@
 program MJProgram
 	int x; int y;
+	char k = 's';
+	bool a = true;
 {
 	
 	int k () int c; {
