@@ -1,3 +1,4 @@
+
 package rs.ac.bg.etf.pp1;
 
 import java_cup.runtime.Symbol;
@@ -88,12 +89,7 @@ import java_cup.runtime.Symbol;
 
 [0-9]+  		 { return new_symbol(sym.NUM_CONST, Integer.valueOf(yytext())); }
 "'"."'" 		 {return new_symbol(sym.CHAR_CONST , Character.valueOf(yytext().charAt(1))); }
+("false") { return new_symbol(sym.BOOL_CONST, 0); }
+("true")  { return new_symbol(sym.BOOL_CONST, 1); }
 ([a-z]|[A-Z])[a-z|A-Z|0-9|_]* 	{return new_symbol (sym.IDENT, yytext()); }
-("false"|"true") { return new_symbol(sym.BOOL_CONST, yytext()); }
 . { System.err.println("Leksicka greska ("+yytext()+") u liniji "+(yyline+1)); }
-
-
-
-
-
-

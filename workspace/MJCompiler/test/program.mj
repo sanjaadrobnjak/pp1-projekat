@@ -1,19 +1,22 @@
 program MJProgram
-	int x; int y;
-	char k = 's';
-	bool a = true;
+
+const int i = 5;
+const char c = 's', m = 'b';
+int j;
+char x[];
+bool q, a[];
+const bool f = false;
 {
-	
-	int k () int c; {
-		c = 1;
-		return c+2;
-	}
-	
-	int main() {
-		y = 2;
-		x = y + 2;
-		y = k() + 3;
-		print(y);
-		return 0;
+	void main( int i[], char c) {
+		//statement
+		i++;
+		j--;
+		c.b++;
+		x[- print * print ].c = print + print;
+		q=j map a;
+		x(-print, print/print);
+		m = c union i.j;
+		
+		
 	}
 }
