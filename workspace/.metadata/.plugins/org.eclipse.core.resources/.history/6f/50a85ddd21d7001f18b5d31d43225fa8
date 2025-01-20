@@ -1,0 +1,27 @@
+program MJProgram
+
+const int i = 5;
+const char c = 's', m = 'b';
+int j;
+char x[];
+bool q, a[];
+const bool f = false;
+{
+	void main( int i[], char c) {
+		//statement
+		i++;
+		j--;
+		c.b++;
+		x[-6 * 'i' ].c = 'c' + -false;
+		q=j map a;
+		x(-3, 8/(-5+9*5));
+		m = c union i.j;
+		
+		i.c = c[-5+'c'*true%new int(-5+9, 'c')/q(-9)] union m;
+		if(-9==5 && true || 'c') 
+			i--;
+		else
+			i++; 
+		
+	}
+}

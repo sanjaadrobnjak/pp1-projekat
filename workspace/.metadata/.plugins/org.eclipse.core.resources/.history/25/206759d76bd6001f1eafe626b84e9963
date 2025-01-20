@@ -1,0 +1,210 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+
+
+:}
+
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+
+terminal String IDENT;
+terminal Integer NUM_CONST;
+terminal Character CHAR_CONST;
+terminal Integer BOOL_CONST;
+
+terminal PROG,BREAK, CLASS, ELSE, CONST, IF, NEW, PRINT, READ, RETURN, VOID, EXTENDS, CONTINUE, UNION, DO, WHILE, MAP, INTERFACE;
+terminal PLUS, MINUS, MUL, DIV, MOD, EQUAL, NEQUAL, GREATER, GREATERE, LESS, LESSE, AND, OR, IS, INCREMENT, DECREMENT, SEMI, COLON, COMMA, DOT, LPAREN, RPAREN, LBRACKET, RBRACKET, LBRACE, RBRACE;
+ 
+
+nonterminal Program, DeclList, MethodDeclList, ConstVarDecls, ConstDecl, VarDecl, Type, Consts, ConstsList;
+nonterminal Bracket, VarsList;
+nonterminal MethodSignature, MethodName, FormPars, FormParsList, MethodDecl, VarDeclarat;
+nonterminal Statements, Statement, DesignatorStatement, Designator, DesOrExpr, Assignop, Setop, IdentExprList, Expr;
+nonterminal ActParsMaybe, ActPars, ExprList, MinusMaybe, Term, AddTermList;
+nonterminal Factor, AddFactorList, Addop, Mulop;
+
+Program ::= (Program) PROG IDENT DeclList LBRACE MethodDeclList RBRACE;
+
+DeclList ::= (Declarations) DeclList ConstVarDecls
+		|
+		(NoDeclarations) /*epsilon*/
+		;
+		
+ConstVarDecls ::= (ConstDecls) ConstDecl
+				|
+				(VarDecls) VarDecl
+				;
+				
+ConstDecl ::= (ConstDeclarations) CONST Type IDENT IS Consts ConstsList SEMI;
+
+Consts ::= (NumConstSingle) NUM_CONST
+		| 
+		(BoolConstSingle) BOOL_CONST
+		|
+		(CharConstSingle) CHAR_CONST
+		;
+		
+ConstsList ::= (Constants) ConstsList COMMA IDENT IS Consts
+			| 
+			(NoConstants) /*epsilon*/
+			;
+
+VarDecl ::= (VarDeclarations) Type IDENT Bracket VarsList SEMI;
+
+Bracket ::= (Bracket) LBRACKET RBRACKET
+		|
+		(NoBracket) /*epsilon*/
+		;
+		
+VarsList ::= (Variables) VarsList COMMA IDENT Bracket
+			|
+			(NoVariables) /*epsilon*/
+			;
+
+MethodSignature ::= (MethodSignature) MethodName IDENT LPAREN FormPars RPAREN;
+
+MethodName ::= (TypeName) Type
+			|
+			(VoidName) VOID
+			;
+			
+MethodDeclList ::= (MethodDeclarations) MethodDeclList MethodDecl 
+				|
+				(NoMethodDeclarations) /*epsilon*/;
+				
+MethodDecl ::= (MethodDecl) MethodSignature VarDeclarat LBRACE Statements RBRACE;
+
+VarDeclarat ::= (VariableDeclarationss) VarDeclarat VarDecl
+			|
+			(NoVariableDeclarationss) /*epsilon*/
+			;
+			
+FormPars ::= (FormParams) Type IDENT Bracket FormParsList
+			|
+			(NoFormParams) /*epsilon*/
+			;
+
+FormParsList ::= (FormParameters) FormParsList COMMA Type IDENT Bracket
+				|
+				(NoFormParameters) /*epsilon*/
+				;
+
+Type ::= (Type) IDENT;
+
+Statements ::= 	(Stmts) Statements Statement
+				|
+				(NoStmts) /*epsilon*/
+				;
+
+Statement ::= (DesignatorStmt) DesignatorStatement SEMI
+			;
+
+DesignatorStatement ::= (DesStmOr) Designator DesOrExpr
+						|
+						(DesAssDesSetDes) Designator Assignop Designator Setop Designator
+						;
+
+Designator ::= (Designator) IDENT IdentExprList;
+
+IdentExprList ::= (DotIdent) IdentExprList DOT IDENT
+				|
+				(BracketExpr) IdentExprList LBRACKET Expr RBRACKET
+				|
+				(NoIdentExpr) /*epsilon*/
+				;
+				
+Setop ::= (Setop) UNION;
+
+Assignop ::= (Assignop) IS;
+
+DesOrExpr ::= (AssignExpr) Assignop Expr
+			|
+			(ParenActPars) LPAREN ActParsMaybe RPAREN
+			|
+			(Incr) INCREMENT
+			|
+			(Decr) DECREMENT
+			;
+
+ActParsMaybe ::= (ActParameters) ActPars
+				|
+				(NoActParameters) /*epsilon*/
+				;
+
+ActPars ::= (ActPars) Expr ExprList;
+
+ExprList ::= (Expressions) ExprList COMMA Expr
+			|
+			(NoExpressions) /*epsilon*/
+			;
+
+Expr ::= (MinusTermAddTerm) MinusMaybe Term AddTermList
+		|
+		(DesMapDes) Designator MAP Designator
+		;
+		
+MinusMaybe ::= (YesMinus) MINUS
+				|
+				(NoMinus) /*epsilon*/
+				;
+				
+AddTermList ::= (AddopTerm) AddTermList Addop Term
+				|
+				(NoAddopTerm) /*epsilon*/
+				;
+				
+Addop ::= (PlusOper) PLUS
+		|
+		(MinusOper) MINUS
+		; 
+		
+Term ::= (Term) Factor MulFactorList;
+
+MulFactorList ::= (MulopFactor) MulFactorList Mulop Factor
+				|
+				(NoMulopFactor) /*epsilon*/
+				;
+
+Mulop ::= (MulOper) MUL
+		|
+		(DivOper) DIV
+		|
+		(ModOper) MOD
+		;
+				
