@@ -1,0 +1,306 @@
+INFO  16:28:46,825 - Compiling source file: C:\Users\sanja\Desktop\PP1 PROJEKAT\workspace\MJCompiler\test\program.mj
+INFO  16:28:46,881 - #6 program
+INFO  16:28:46,882 - #2 MJProgram
+INFO  16:28:46,882 - #10 const
+INFO  16:28:46,884 - #2 int
+INFO  16:28:46,889 - #2 i
+INFO  16:28:46,891 - #37 =
+INFO  16:28:46,891 - #3 5
+INFO  16:28:46,892 - #40 ;
+INFO  16:28:46,893 - #10 const
+INFO  16:28:46,894 - #2 char
+INFO  16:28:46,894 - #2 c
+INFO  16:28:46,894 - #37 =
+INFO  16:28:46,895 - #4 s
+INFO  16:28:46,895 - #42 ,
+INFO  16:28:46,896 - #2 m
+INFO  16:28:46,896 - #37 =
+INFO  16:28:46,896 - #4 b
+INFO  16:28:46,896 - #40 ;
+INFO  16:28:46,896 - #2 int
+INFO  16:28:46,897 - #2 j
+INFO  16:28:46,897 - #40 ;
+INFO  16:28:46,904 - #2 char
+INFO  16:28:46,907 - #2 x
+INFO  16:28:46,907 - #46 [
+INFO  16:28:46,907 - #47 ]
+INFO  16:28:46,907 - #40 ;
+INFO  16:28:46,908 - #2 bool
+INFO  16:28:46,908 - #2 q
+INFO  16:28:46,908 - #42 ,
+INFO  16:28:46,908 - #2 a
+INFO  16:28:46,909 - #46 [
+INFO  16:28:46,909 - #47 ]
+INFO  16:28:46,909 - #40 ;
+INFO  16:28:46,910 - #10 const
+INFO  16:28:46,910 - #2 bool
+INFO  16:28:46,910 - #2 f
+INFO  16:28:46,910 - #37 =
+INFO  16:28:46,910 - #5 0
+INFO  16:28:46,910 - #40 ;
+INFO  16:28:46,911 - #48 {
+INFO  16:28:46,911 - #16 void
+INFO  16:28:46,913 - #2 main
+INFO  16:28:46,916 - #44 (
+INFO  16:28:46,916 - #2 int
+INFO  16:28:46,916 - #2 i
+INFO  16:28:46,917 - #46 [
+INFO  16:28:46,917 - #47 ]
+INFO  16:28:46,917 - #42 ,
+INFO  16:28:46,921 - #2 char
+INFO  16:28:46,922 - #2 c
+INFO  16:28:46,922 - #45 )
+INFO  16:28:46,923 - #48 {
+INFO  16:28:46,925 - #2 i
+INFO  16:28:46,928 - #38 ++
+INFO  16:28:46,934 - #40 ;
+INFO  16:28:46,942 - #2 j
+INFO  16:28:46,942 - #39 --
+INFO  16:28:46,942 - #40 ;
+INFO  16:28:46,944 - #2 c
+INFO  16:28:46,944 - #43 .
+INFO  16:28:46,944 - #2 b
+INFO  16:28:46,944 - #38 ++
+INFO  16:28:46,945 - #40 ;
+INFO  16:28:46,945 - #2 x
+INFO  16:28:46,946 - #46 [
+INFO  16:28:46,946 - #25 -
+INFO  16:28:46,946 - #13 print
+INFO  16:28:46,948 - #47 ]
+INFO  16:28:46,954 - #37 =
+INFO  16:28:46,955 - #13 print
+INFO  16:28:46,957 - #24 +
+INFO  16:28:46,957 - #13 print
+INFO  16:28:46,959 - #40 ;
+INFO  16:28:46,959 - #49 }
+INFO  16:28:46,959 - #49 }
+INFO  16:28:46,964 - Program(
+ MJProgram
+  Declarations(
+    Declarations(
+      Declarations(
+        Declarations(
+          Declarations(
+            Declarations(
+              NoDeclarations(
+              ) [NoDeclarations]
+              ConstDecls(
+                ConstDeclarations(
+                  Type(
+                   int
+                  ) [Type]
+                 i
+                  NumConstSingle(
+                   5
+                  ) [NumConstSingle]
+                  NoConstants(
+                  ) [NoConstants]
+                ) [ConstDeclarations]
+              ) [ConstDecls]
+            ) [Declarations]
+            ConstDecls(
+              ConstDeclarations(
+                Type(
+                 char
+                ) [Type]
+               c
+                CharConstSingle(
+                 s
+                ) [CharConstSingle]
+                Constants(
+                  NoConstants(
+                  ) [NoConstants]
+                 m
+                  CharConstSingle(
+                   b
+                  ) [CharConstSingle]
+                ) [Constants]
+              ) [ConstDeclarations]
+            ) [ConstDecls]
+          ) [Declarations]
+          VarDecls(
+            VarDeclarations(
+              Type(
+               int
+              ) [Type]
+             j
+              NoBracket(
+              ) [NoBracket]
+              NoVariables(
+              ) [NoVariables]
+            ) [VarDeclarations]
+          ) [VarDecls]
+        ) [Declarations]
+        VarDecls(
+          VarDeclarations(
+            Type(
+             char
+            ) [Type]
+           x
+            Bracket(
+            ) [Bracket]
+            NoVariables(
+            ) [NoVariables]
+          ) [VarDeclarations]
+        ) [VarDecls]
+      ) [Declarations]
+      VarDecls(
+        VarDeclarations(
+          Type(
+           bool
+          ) [Type]
+         q
+          NoBracket(
+          ) [NoBracket]
+          Variables(
+            NoVariables(
+            ) [NoVariables]
+           a
+            Bracket(
+            ) [Bracket]
+          ) [Variables]
+        ) [VarDeclarations]
+      ) [VarDecls]
+    ) [Declarations]
+    ConstDecls(
+      ConstDeclarations(
+        Type(
+         bool
+        ) [Type]
+       f
+        BoolConstSingle(
+         0
+        ) [BoolConstSingle]
+        NoConstants(
+        ) [NoConstants]
+      ) [ConstDeclarations]
+    ) [ConstDecls]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodSignature(
+        VoidName(
+        ) [VoidName]
+       main
+        FormParams(
+          Type(
+           int
+          ) [Type]
+         i
+          Bracket(
+          ) [Bracket]
+          FormParameters(
+            NoFormParameters(
+            ) [NoFormParameters]
+            Type(
+             char
+            ) [Type]
+           c
+            NoBracket(
+            ) [NoBracket]
+          ) [FormParameters]
+        ) [FormParams]
+      ) [MethodSignature]
+      NoVariableDeclarationss(
+      ) [NoVariableDeclarationss]
+      Stmts(
+        Stmts(
+          Stmts(
+            Stmts(
+              NoStmts(
+              ) [NoStmts]
+              DesignatorStmt(
+                DesStmOr(
+                  Designator(
+                   i
+                    NoIdentExpr(
+                    ) [NoIdentExpr]
+                  ) [Designator]
+                  Incr(
+                  ) [Incr]
+                ) [DesStmOr]
+              ) [DesignatorStmt]
+            ) [Stmts]
+            DesignatorStmt(
+              DesStmOr(
+                Designator(
+                 j
+                  NoIdentExpr(
+                  ) [NoIdentExpr]
+                ) [Designator]
+                Decr(
+                ) [Decr]
+              ) [DesStmOr]
+            ) [DesignatorStmt]
+          ) [Stmts]
+          DesignatorStmt(
+            DesStmOr(
+              Designator(
+               c
+                DotIdent(
+                  NoIdentExpr(
+                  ) [NoIdentExpr]
+                 b
+                ) [DotIdent]
+              ) [Designator]
+              Incr(
+              ) [Incr]
+            ) [DesStmOr]
+          ) [DesignatorStmt]
+        ) [Stmts]
+        DesignatorStmt(
+          DesStmOr(
+            Designator(
+             x
+              BracketExpr(
+                NoIdentExpr(
+                ) [NoIdentExpr]
+                MinusTermAddTerm(
+                  YesMinus(
+                  ) [YesMinus]
+                  Term(
+                    NoFactor(
+                    ) [NoFactor]
+                    NoMulopFactor(
+                    ) [NoMulopFactor]
+                  ) [Term]
+                  NoAddopTerm(
+                  ) [NoAddopTerm]
+                ) [MinusTermAddTerm]
+              ) [BracketExpr]
+            ) [Designator]
+            AssignExpr(
+              Assignop(
+              ) [Assignop]
+              MinusTermAddTerm(
+                NoMinus(
+                ) [NoMinus]
+                Term(
+                  NoFactor(
+                  ) [NoFactor]
+                  NoMulopFactor(
+                  ) [NoMulopFactor]
+                ) [Term]
+                AddopTerm(
+                  NoAddopTerm(
+                  ) [NoAddopTerm]
+                  PlusOper(
+                  ) [PlusOper]
+                  Term(
+                    NoFactor(
+                    ) [NoFactor]
+                    NoMulopFactor(
+                    ) [NoMulopFactor]
+                  ) [Term]
+                ) [AddopTerm]
+              ) [MinusTermAddTerm]
+            ) [AssignExpr]
+          ) [DesStmOr]
+        ) [DesignatorStmt]
+      ) [Stmts]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:28:46,964 - ===================================

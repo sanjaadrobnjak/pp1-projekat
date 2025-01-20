@@ -1,0 +1,55 @@
+INFO  18:43:55,480 - Compiling source file: C:\Users\sanja\Desktop\PP1 PROJEKAT\workspace\MJCompiler\test\program.mj
+INFO  18:43:55,505 - #6 program
+INFO  18:43:55,506 - #2 MJProgram
+INFO  18:43:55,506 - #10 const
+INFO  18:43:55,507 - #2 int
+INFO  18:43:55,507 - #2 i
+INFO  18:43:55,508 - #37 =
+INFO  18:43:55,509 - #3 5
+INFO  18:43:55,509 - #40 ;
+INFO  18:43:55,510 - #10 const
+INFO  18:43:55,511 - #2 char
+INFO  18:43:55,512 - #2 c
+INFO  18:43:55,512 - #37 =
+INFO  18:43:55,513 - #4 s
+INFO  18:43:55,513 - #40 ;
+INFO  18:43:55,518 - #48 {
+INFO  18:43:55,518 - #49 }
+INFO  18:43:55,522 - Program(
+ MJProgram
+  Declarations(
+    Declarations(
+      NoDeclarations(
+      ) [NoDeclarations]
+      ConstDecls(
+        ConstDeclarations(
+          Type(
+           int
+          ) [Type]
+         i
+          NumConstSingle(
+           5
+          ) [NumConstSingle]
+          NoConstants(
+          ) [NoConstants]
+        ) [ConstDeclarations]
+      ) [ConstDecls]
+    ) [Declarations]
+    ConstDecls(
+      ConstDeclarations(
+        Type(
+         char
+        ) [Type]
+       c
+        CharConstSingle(
+         s
+        ) [CharConstSingle]
+        NoConstants(
+        ) [NoConstants]
+      ) [ConstDeclarations]
+    ) [ConstDecls]
+  ) [Declarations]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  18:43:55,523 - ===================================

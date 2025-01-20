@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 19/0/2025 16:26:36
+// 20/0/2025 13:21:54
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,34 +8,80 @@ package rs.ac.bg.etf.pp1.ast;
 public interface Visitor { 
 
     public void visit(Mulop Mulop);
+    public void visit(MinusMaybeTerm MinusMaybeTerm);
+    public void visit(Relop Relop);
+    public void visit(RelopExprMaybe RelopExprMaybe);
     public void visit(VarDeclarat VarDeclarat);
+    public void visit(ParenActParsMaybe ParenActParsMaybe);
+    public void visit(CondTermList CondTermList);
+    public void visit(DesignatorStmtMaybe DesignatorStmtMaybe);
     public void visit(Addop Addop);
+    public void visit(CondDesignatorStmtMaybe CondDesignatorStmtMaybe);
+    public void visit(MaybeExpr MaybeExpr);
     public void visit(ActParsMaybe ActParsMaybe);
     public void visit(Factor Factor);
+    public void visit(CondFactList CondFactList);
     public void visit(DeclList DeclList);
     public void visit(DesOrExpr DesOrExpr);
     public void visit(MethodName MethodName);
     public void visit(MulFactorList MulFactorList);
     public void visit(FormParsList FormParsList);
     public void visit(Statements Statements);
+    public void visit(ElseStatement ElseStatement);
     public void visit(ExprList ExprList);
     public void visit(VarsList VarsList);
-    public void visit(MinusMaybe MinusMaybe);
     public void visit(Expr Expr);
     public void visit(DesignatorStatement DesignatorStatement);
     public void visit(ConstsList ConstsList);
     public void visit(Statement Statement);
     public void visit(ConstVarDecls ConstVarDecls);
     public void visit(VarDecl VarDecl);
+    public void visit(ExprOrActPars ExprOrActPars);
     public void visit(AddTermList AddTermList);
     public void visit(ConstDecl ConstDecl);
     public void visit(ActParsParenMaybe ActParsParenMaybe);
     public void visit(MethodDeclList MethodDeclList);
+    public void visit(NumConstMaybe NumConstMaybe);
     public void visit(Consts Consts);
     public void visit(ActParsOrExpr ActParsOrExpr);
     public void visit(FormPars FormPars);
     public void visit(IdentExprList IdentExprList);
-    public void visit(NoFactor NoFactor);
+    public void visit(Label Label);
+    public void visit(NoDesignatorStmtComma NoDesignatorStmtComma);
+    public void visit(YesDesignatorStmtComma YesDesignatorStmtComma);
+    public void visit(NoConditionDesignatorStmt NoConditionDesignatorStmt);
+    public void visit(YesConditionDesignatorStmt YesConditionDesignatorStmt);
+    public void visit(NoNumConstComma NoNumConstComma);
+    public void visit(YesNumConstComma YesNumConstComma);
+    public void visit(NoExpression NoExpression);
+    public void visit(YesExpression YesExpression);
+    public void visit(LessOrEqualOper LessOrEqualOper);
+    public void visit(LessOper LessOper);
+    public void visit(GreaterOrEqualOper GreaterOrEqualOper);
+    public void visit(GreaterOper GreaterOper);
+    public void visit(NotEqualOper NotEqualOper);
+    public void visit(EqualOper EqualOper);
+    public void visit(NoRelopExpr NoRelopExpr);
+    public void visit(YesRelopExpr YesRelopExpr);
+    public void visit(CondFact CondFact);
+    public void visit(NoConditionFactors NoConditionFactors);
+    public void visit(ConditionFactors ConditionFactors);
+    public void visit(CondTerm CondTerm);
+    public void visit(NoConditionTerms NoConditionTerms);
+    public void visit(ConditionTerms ConditionTerms);
+    public void visit(Condition Condition);
+    public void visit(NoElseStatement NoElseStatement);
+    public void visit(YesElseStatement YesElseStatement);
+    public void visit(ActParsParenYes ActParsParenYes);
+    public void visit(BracketExpressionYes BracketExpressionYes);
+    public void visit(NoParenActPars NoParenActPars);
+    public void visit(YesParenActPars YesParenActPars);
+    public void visit(ParenExpression ParenExpression);
+    public void visit(NewTypeExprActPars NewTypeExprActPars);
+    public void visit(BooleanConstantt BooleanConstantt);
+    public void visit(CharacterConstantt CharacterConstantt);
+    public void visit(NumberConstantt NumberConstantt);
+    public void visit(DesActPars DesActPars);
     public void visit(ModOper ModOper);
     public void visit(DivOper DivOper);
     public void visit(MulOper MulOper);
@@ -67,6 +113,14 @@ public interface Visitor {
     public void visit(Designator Designator);
     public void visit(DesAssDesSetDes DesAssDesSetDes);
     public void visit(DesStmOr DesStmOr);
+    public void visit(BraceStatements BraceStatements);
+    public void visit(WhileLoop WhileLoop);
+    public void visit(PrintExprNumConst PrintExprNumConst);
+    public void visit(ReadDesignatorStm ReadDesignatorStm);
+    public void visit(ReturnExpr ReturnExpr);
+    public void visit(ContinueStm ContinueStm);
+    public void visit(BreakStm BreakStm);
+    public void visit(IfCondElseStmt IfCondElseStmt);
     public void visit(DesignatorStmt DesignatorStmt);
     public void visit(NoStmts NoStmts);
     public void visit(Stmts Stmts);

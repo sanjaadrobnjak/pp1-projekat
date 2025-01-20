@@ -1,0 +1,16 @@
+INFO  13:31:09,401 - Compiling source file: C:\Users\sanja\Desktop\PP1 PROJEKAT\workspace\MJCompiler\test\program.mj
+INFO  13:31:09,520 - #6 program
+INFO  13:31:09,520 - #2 p
+INFO  13:31:09,521 - #10 const
+INFO  13:31:09,524 - #2 int
+INFO  13:31:09,524 - #2 tableSize
+INFO  13:31:09,526 - #37 =
+INFO  13:31:09,526 - #3 10
+INFO  13:31:09,527 - #40 ;
+INFO  13:31:09,529 - #2 set
+INFO  13:31:09,530 - #2 s1
+INFO  13:31:09,530 - #40 ;
+INFO  13:31:09,535 - #16 void
+ERROR 13:31:09,535 - 
+Sintaksna greska na liniji 4
+ERROR 13:31:09,536 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 4

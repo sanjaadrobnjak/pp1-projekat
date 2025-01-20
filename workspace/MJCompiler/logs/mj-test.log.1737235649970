@@ -1,0 +1,186 @@
+INFO  22:25:12,712 - Compiling source file: C:\Users\sanja\Desktop\PP1 PROJEKAT\workspace\MJCompiler\test\program.mj
+INFO  22:25:12,746 - #6 program
+INFO  22:25:12,746 - #2 MJProgram
+INFO  22:25:12,746 - #10 const
+INFO  22:25:12,749 - #2 int
+INFO  22:25:12,749 - #2 i
+INFO  22:25:12,751 - #37 =
+INFO  22:25:12,751 - #3 5
+INFO  22:25:12,751 - #40 ;
+INFO  22:25:12,754 - #10 const
+INFO  22:25:12,756 - #2 char
+INFO  22:25:12,757 - #2 c
+INFO  22:25:12,757 - #37 =
+INFO  22:25:12,759 - #4 s
+INFO  22:25:12,759 - #42 ,
+INFO  22:25:12,759 - #2 m
+INFO  22:25:12,760 - #37 =
+INFO  22:25:12,760 - #4 b
+INFO  22:25:12,760 - #40 ;
+INFO  22:25:12,761 - #2 int
+INFO  22:25:12,761 - #2 j
+INFO  22:25:12,761 - #40 ;
+INFO  22:25:12,765 - #2 char
+INFO  22:25:12,772 - #2 x
+INFO  22:25:12,772 - #46 [
+INFO  22:25:12,772 - #47 ]
+INFO  22:25:12,772 - #40 ;
+INFO  22:25:12,774 - #2 bool
+INFO  22:25:12,774 - #2 q
+INFO  22:25:12,774 - #42 ,
+INFO  22:25:12,774 - #2 a
+INFO  22:25:12,774 - #46 [
+INFO  22:25:12,774 - #47 ]
+INFO  22:25:12,774 - #40 ;
+INFO  22:25:12,775 - #10 const
+INFO  22:25:12,776 - #2 bool
+INFO  22:25:12,776 - #2 f
+INFO  22:25:12,776 - #37 =
+INFO  22:25:12,776 - #5 0
+INFO  22:25:12,776 - #40 ;
+INFO  22:25:12,777 - #48 {
+INFO  22:25:12,777 - #16 void
+INFO  22:25:12,779 - #2 main
+INFO  22:25:12,781 - #44 (
+INFO  22:25:12,781 - #2 int
+INFO  22:25:12,781 - #2 i
+INFO  22:25:12,781 - #46 [
+INFO  22:25:12,781 - #47 ]
+INFO  22:25:12,781 - #42 ,
+INFO  22:25:12,798 - #2 char
+INFO  22:25:12,798 - #2 c
+INFO  22:25:12,798 - #45 )
+INFO  22:25:12,800 - #49 }
+INFO  22:25:12,808 - Program(
+ MJProgram
+  Declarations(
+    Declarations(
+      Declarations(
+        Declarations(
+          Declarations(
+            Declarations(
+              NoDeclarations(
+              ) [NoDeclarations]
+              ConstDecls(
+                ConstDeclarations(
+                  Type(
+                   int
+                  ) [Type]
+                 i
+                  NumConstSingle(
+                   5
+                  ) [NumConstSingle]
+                  NoConstants(
+                  ) [NoConstants]
+                ) [ConstDeclarations]
+              ) [ConstDecls]
+            ) [Declarations]
+            ConstDecls(
+              ConstDeclarations(
+                Type(
+                 char
+                ) [Type]
+               c
+                CharConstSingle(
+                 s
+                ) [CharConstSingle]
+                Constants(
+                  NoConstants(
+                  ) [NoConstants]
+                 m
+                  CharConstSingle(
+                   b
+                  ) [CharConstSingle]
+                ) [Constants]
+              ) [ConstDeclarations]
+            ) [ConstDecls]
+          ) [Declarations]
+          VarDecls(
+            VarDeclarations(
+              Type(
+               int
+              ) [Type]
+             j
+              NoBracket(
+              ) [NoBracket]
+              NoVariables(
+              ) [NoVariables]
+            ) [VarDeclarations]
+          ) [VarDecls]
+        ) [Declarations]
+        VarDecls(
+          VarDeclarations(
+            Type(
+             char
+            ) [Type]
+           x
+            Bracket(
+            ) [Bracket]
+            NoVariables(
+            ) [NoVariables]
+          ) [VarDeclarations]
+        ) [VarDecls]
+      ) [Declarations]
+      VarDecls(
+        VarDeclarations(
+          Type(
+           bool
+          ) [Type]
+         q
+          NoBracket(
+          ) [NoBracket]
+          Variables(
+            NoVariables(
+            ) [NoVariables]
+           a
+            Bracket(
+            ) [Bracket]
+          ) [Variables]
+        ) [VarDeclarations]
+      ) [VarDecls]
+    ) [Declarations]
+    ConstDecls(
+      ConstDeclarations(
+        Type(
+         bool
+        ) [Type]
+       f
+        BoolConstSingle(
+         0
+        ) [BoolConstSingle]
+        NoConstants(
+        ) [NoConstants]
+      ) [ConstDeclarations]
+    ) [ConstDecls]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodSignature(
+        VoidName(
+        ) [VoidName]
+       main
+        FormParams(
+          Type(
+           int
+          ) [Type]
+         i
+          Bracket(
+          ) [Bracket]
+          FormParameters(
+            NoFormParameters(
+            ) [NoFormParameters]
+            Type(
+             char
+            ) [Type]
+           c
+            NoBracket(
+            ) [NoBracket]
+          ) [FormParameters]
+        ) [FormParams]
+      ) [MethodSignature]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  22:25:12,812 - ===================================

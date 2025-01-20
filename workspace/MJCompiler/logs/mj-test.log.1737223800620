@@ -1,0 +1,42 @@
+INFO  18:53:43,867 - Compiling source file: C:\Users\sanja\Desktop\PP1 PROJEKAT\workspace\MJCompiler\test\program.mj
+INFO  18:53:43,890 - #6 program
+INFO  18:53:43,890 - #2 MJProgram
+INFO  18:53:43,891 - #10 const
+INFO  18:53:43,892 - #2 int
+INFO  18:53:43,892 - #2 i
+INFO  18:53:43,893 - #37 =
+INFO  18:53:43,893 - #3 5
+INFO  18:53:43,894 - #40 ;
+INFO  18:53:43,898 - #10 const
+INFO  18:53:43,900 - #2 char
+INFO  18:53:43,901 - #2 c
+INFO  18:53:43,901 - #37 =
+INFO  18:53:43,902 - #4 s
+INFO  18:53:43,903 - #42 ,
+INFO  18:53:43,903 - #2 m
+INFO  18:53:43,904 - #37 =
+INFO  18:53:43,904 - #4 b
+INFO  18:53:43,904 - #40 ;
+INFO  18:53:43,904 - #2 int
+INFO  18:53:43,905 - #2 j
+INFO  18:53:43,905 - #40 ;
+INFO  18:53:43,911 - #2 char
+INFO  18:53:43,918 - #2 x
+INFO  18:53:43,918 - #46 [
+INFO  18:53:43,918 - #47 ]
+INFO  18:53:43,918 - #40 ;
+INFO  18:53:43,918 - #2 bool
+INFO  18:53:43,919 - #2 q
+INFO  18:53:43,919 - #42 ,
+INFO  18:53:43,920 - #2 a
+INFO  18:53:43,920 - #46 [
+INFO  18:53:43,920 - #47 ]
+INFO  18:53:43,920 - #40 ;
+INFO  18:53:43,921 - #10 const
+INFO  18:53:43,921 - #2 bool
+INFO  18:53:43,921 - #2 f
+INFO  18:53:43,921 - #37 =
+INFO  18:53:43,922 - #2 false
+ERROR 18:53:43,922 - 
+Sintaksna greska na liniji 8
+ERROR 18:53:43,922 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 8
